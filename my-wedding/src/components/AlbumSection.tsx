@@ -60,7 +60,7 @@ const AlbumSection: React.FC<AlbumProps> = ({ data }) => {
                   transition={{ duration: 0.8, ease: "easeOut", delay: delayIndex * 0.05 }}
                   onClick={() => openLightbox(src, i)}
                 >
-                  <img src={src} alt={`Wedding Gallery Left ${i + 1}`} loading="lazy" />
+                  <img src={src} alt={`Wedding Gallery Left ${i + 1}`} loading="lazy" decoding="async" />
                 </motion.div>
               );
             })}
@@ -80,7 +80,7 @@ const AlbumSection: React.FC<AlbumProps> = ({ data }) => {
                   transition={{ duration: 0.8, ease: "easeOut", delay: delayIndex * 0.05 }}
                   onClick={() => openLightbox(src, i)}
                 >
-                  <img src={src} alt={`Wedding Gallery Right ${i + 1}`} loading="lazy" />
+                  <img src={src} alt={`Wedding Gallery Right ${i + 1}`} loading="lazy" decoding="async" />
                 </motion.div>
               );
             })}
@@ -117,7 +117,7 @@ const AlbumSection: React.FC<AlbumProps> = ({ data }) => {
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <img src={selectedImage} alt="Wedding Preview" className={styles.lightboxImg} />
+              <img src={selectedImage} alt="Wedding Preview" className={styles.lightboxImg} decoding="async" />
             </motion.div>
 
             {/* Next Button */}

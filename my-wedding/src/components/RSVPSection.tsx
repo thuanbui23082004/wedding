@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './RSVPSection.module.css';
 import traitim from '../assets/traitim.png';
+import RSVPModal from './RSVPModal';
 
 interface RSVPProps {
   data: any;
 }
 
 const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className={styles.rsvpSection}>
       {/* Background Image */}
@@ -74,9 +77,26 @@ const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
         >
           {data.events.party.dateFull}
         </motion.p>
+
+        <motion.button
+          className={styles.rsvpButton}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.75 }}
+          onClick={() => setIsModalOpen(true)}
+        >
+          Xác nhận tham dự
+        </motion.button>
       </div>
+
+      <RSVPModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
 
 export default RSVPSection;
+
