@@ -42,7 +42,7 @@ const RSVPModal: React.FC<RSVPModalProps> = ({ isOpen, onClose }) => {
       data.append('Side', formData.side);
       data.append('Message', formData.message);
 
-      const response = await fetch(SCRIPT_URL, {
+      await fetch(SCRIPT_URL, {
         method: 'POST',
         body: data,
         mode: 'no-cors' // Thêm dòng này để vượt qua lỗi CORS của trình duyệt
