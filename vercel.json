@@ -1,0 +1,6 @@
+{
+  "installCommand": "npm install --prefix my-wedding",
+  "buildCommand": "npm run build --prefix my-wedding",
+  "outputDirectory": "my-wedding/dist",
+  "cleanUrls": true
+}
