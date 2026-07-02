@@ -12,7 +12,7 @@
 /* Top Parents Block */
 .parentsBlock {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
+  grid-template-columns: 1fr 16px 1fr;
   align-items: stretch;
   margin-bottom: 2.5rem;
   width: 100%;
@@ -24,12 +24,12 @@
   flex-direction: column;
   justify-content: flex-start;
   min-width: 0; /* Prevents long content from stretching the column */
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 .columnTitle {
   font-family: 'Barlow', sans-serif;
-  font-size: clamp(0.7rem, 3vw, 0.85rem);
+  font-size: clamp(0.68rem, 2.8vw, 0.85rem);
   font-weight: 700;
   color: #836553; /* Warm bronze */
   letter-spacing: 1px;
@@ -40,7 +40,7 @@
 .parentName {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
-  font-size: clamp(0.65rem, 3.1vw, 0.82rem);
+  font-size: clamp(0.62rem, 2.8vw, 0.8rem);
   color: #333;
   margin: 0 0 0.25rem 0;
   line-height: 1.45;
@@ -49,7 +49,7 @@
 
 .parentAddress {
   font-family: 'Barlow', sans-serif;
-  font-size: clamp(0.6rem, 2.6vw, 0.72rem);
+  font-size: clamp(0.58rem, 2.5vw, 0.72rem);
   color: #777;
   margin: 0.4rem 0 0 0;
   line-height: 1.4;
@@ -59,6 +59,7 @@
 .verticalLine {
   background-color: #d8cfc4;
   width: 1px;
+  justify-self: center;
 }
 
 /* Bottom Couple Block */
@@ -79,7 +80,7 @@
 
 .cursiveName {
   font-family: 'UTM Azkia', var(--font-cursive);
-  font-size: clamp(2.2rem, 9.5vw, 3.2rem);
+  font-size: clamp(1.8rem, 8vw, 2.6rem);
   font-weight: normal;
   color: #333;
   margin: 0;

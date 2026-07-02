@@ -9,16 +9,16 @@
   },
   "family": {
     "groom": {
-      "title": "NHÀ TRAI",
-      "father": "ÔNG NGUYỄN QUỐC TUẤN",
-      "mother": "BÀ LÊ THỊ MỸ DUYÊN",
-      "address": "Đội 5-TDP. Vĩnh An, p.Phong Dinh, TP. Huế"
-    },
-    "bride": {
       "title": "NHÀ GÁI",
       "father": "ÔNG HUỲNH GIA LONG",
       "mother": "BÀ NGUYỄN THỊ NGỌC HẠNH",
       "address": "Tổ 7, thôn Hưng Mỹ, xã Thăng An, TP. Đà Nẵng"
+    },
+    "bride": {
+      "title": "NHÀ TRAI",
+      "father": "ÔNG NGUYỄN QUỐC TUẤN",
+      "mother": "BÀ LÊ THỊ MỸ DUYÊN",
+      "address": "Đội 5-TDP. Vĩnh An, p.Phong Dinh, TP. Huế"
     }
   },
   "events": {

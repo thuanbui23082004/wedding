@@ -15,19 +15,19 @@ const EventDetails: React.FC<EventProps> = ({ data }) => {
           src={data.images.cdcr[0]} 
           alt="Couple 1" 
           className={styles.photo}
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         />
         <motion.img 
           src={data.images.cdcr[1]} 
           alt="Couple 2" 
           className={styles.photo}
-          initial={{ opacity: 0, x: 60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.4 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
         />
       </div>
 
@@ -59,30 +59,30 @@ const EventDetails: React.FC<EventProps> = ({ data }) => {
       <div className={styles.threePhotos}>
         <motion.div 
           className={styles.sidePhotoWrapper}
-          initial={{ opacity: 0, x: -45 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <img src={data.images.thumoi[0]} alt="Couple 3" className={styles.sidePhoto} />
         </motion.div>
         
         <motion.div 
           className={styles.centerPhotoWrapper}
-          initial={{ opacity: 0, y: 35 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.25 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
         >
           <img src={data.images.thumoi[1]} alt="Couple 4" className={styles.centerPhoto} />
         </motion.div>
         
         <motion.div 
           className={styles.sidePhotoWrapper}
-          initial={{ opacity: 0, x: 45 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1], delay: 0.4 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
         >
           <img src={data.images.thumoi[2]} alt="Couple 5" className={styles.sidePhoto} />
         </motion.div>

@@ -10,37 +10,37 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
   return (
     <section className={styles.heroSection}>
       {/* Background Image */}
-      <div 
+      <div
         className={styles.heroBg}
         style={{
           backgroundImage: `url(${data.images.cover})`
         }}
       />
-      
+
       {/* Light gradient overlay for text readability */}
       <div className={styles.heroOverlay} />
 
       {/* Top Names */}
       <div className={styles.heroTop}>
-        <motion.h1 
+        <motion.h1
           className={`${styles.heroTitle} font-cursive`}
           initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          {data.couple.groom} & {data.couple.bride}
+          {data.couple.bride} & {data.couple.groom}
         </motion.h1>
       </div>
 
       {/* Bottom Invitation Box */}
       <div className={styles.heroBottom}>
-        <motion.div 
+        <motion.div
           className={styles.heroBox}
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0, delay: 0.2 }}
         >
-          <motion.p 
+          <motion.p
             className={styles.heroSubtitle}
             initial={{ opacity: 0, y: -25 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
           >
             Thư mời tiệc cưới
           </motion.p>
-          <motion.p 
+          <motion.p
             className={styles.heroTime}
             initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
           >
             {data.events.party.time}
           </motion.p>
-          <motion.p 
+          <motion.p
             className={styles.heroDate}
             initial={{ opacity: 0, scale: 0.6 }}
             animate={{ opacity: 1, scale: 1 }}

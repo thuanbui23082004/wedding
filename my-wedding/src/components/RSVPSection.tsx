@@ -11,18 +11,18 @@ const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
   return (
     <section className={styles.rsvpSection}>
       {/* Background Image */}
-      <div 
+      <div
         className={styles.rsvpBg}
         style={{
           backgroundImage: `url(${data.images.footerBg})`
         }}
       />
-      
+
       {/* White gradient/overlay to fade the image as per design */}
       <div className={styles.rsvpOverlay} />
 
       <div className={styles.contentContainer}>
-        <motion.p 
+        <motion.p
           className={`${styles.thankYouCursive} font-cursive`}
           initial={{ opacity: 0, y: -25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,8 +31,8 @@ const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
         >
           Thank You
         </motion.p>
-        
-        <motion.p 
+
+        <motion.p
           className={styles.thankYouSub}
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
           trong hành trình hạnh phúc của chúng mình.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           className={styles.signatureLine}
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -55,17 +55,17 @@ const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
           <span className={styles.line}></span>
         </motion.div>
 
-        <motion.p 
+        <motion.p
           className={`${styles.coupleNames} font-cursive`}
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut", delay: 0.45 }}
         >
-          {data.couple.groom} & {data.couple.bride}
+          {data.couple.bride} & {data.couple.groom}
         </motion.p>
 
-        <motion.p 
+        <motion.p
           className={styles.weddingDate}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

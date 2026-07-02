@@ -54,10 +54,10 @@ const AlbumSection: React.FC<AlbumProps> = ({ data }) => {
                 <motion.div 
                   key={`left-${i}`} 
                   className={styles.albumItem}
-                  initial={{ opacity: 0, x: -35, scale: 0.95 }}
-                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                  viewport={{ once: true, amount: 0.25 }}
-                  transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1], delay: 0.15 + delayIndex * 0.1 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: delayIndex * 0.05 }}
                   onClick={() => openLightbox(src, i)}
                 >
                   <img src={src} alt={`Wedding Gallery Left ${i + 1}`} loading="lazy" />
@@ -74,10 +74,10 @@ const AlbumSection: React.FC<AlbumProps> = ({ data }) => {
                 <motion.div 
                   key={`right-${i}`} 
                   className={styles.albumItem}
-                  initial={{ opacity: 0, x: 35, scale: 0.95 }}
-                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                  viewport={{ once: true, amount: 0.25 }}
-                  transition={{ duration: 1.2, ease: [0.25, 1, 0.5, 1], delay: 0.25 + delayIndex * 0.1 }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: delayIndex * 0.05 }}
                   onClick={() => openLightbox(src, i)}
                 >
                   <img src={src} alt={`Wedding Gallery Right ${i + 1}`} loading="lazy" />
