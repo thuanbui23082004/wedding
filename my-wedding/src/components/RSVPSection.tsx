@@ -62,7 +62,7 @@ const RSVPSection: React.FC<RSVPProps> = ({ data }) => {
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: "easeOut", delay: 0.45 }}
         >
-          {data.couple.bride} & {data.couple.groom}
+          {data.couple.groom} & {data.couple.bride}
         </motion.p>
 
         <motion.p

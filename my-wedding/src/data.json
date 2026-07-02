@@ -23,28 +23,28 @@
   },
   "events": {
     "ceremony": {
-      "title": "LỄ VU QUY",
+      "title": "LỄ THÀNH HÔN",
       "time": "09:00",
-      "date": "19",
+      "date": "21",
       "month": "07",
       "year": "2026",
-      "dayOfWeek": "Chủ Nhật",
-      "lunarDate": "Tức Ngày 06 Tháng 06 Năm Bính Ngọ",
-      "location": "Tại Tư Gia Nhà Gái - Tổ 7, thôn Hưng Mỹ, xã Thăng An, TP. Đà Nẵng"
+      "dayOfWeek": "Thứ Ba",
+      "lunarDate": "Tức Ngày 08 Tháng 06 Năm Bính Ngọ",
+      "location": "Tư Gia Nhà Trai - Đội 5, TDP Vĩnh An, phường Phong Dinh, TP. Huế"
     },
     "party": {
-      "title": "TIỆC MỪNG LỄ VU QUY",
-      "time": "10:30 - Chủ Nhật",
-      "dateFull": "19 . 07 . 2026",
-      "lunarDate": "Tức Ngày 06 Tháng 06 Năm Bính Ngọ",
-      "location": "Tổ 7, thôn Hưng Mỹ, xã Thăng An, TP. Đà Nẵng"
+      "title": "TIỆC MỪNG LỄ THÀNH HÔN",
+      "time": "11:00 - Thứ Ba",
+      "dateFull": "21 . 07 . 2026",
+      "lunarDate": "Tức Ngày 08 Tháng 06 Năm Bính Ngọ",
+      "location": "Đội 5, TDP Vĩnh An, phường Phong Dinh, TP. Huế"
     }
   },
   "location": {
-    "name": "TƯ GIA NHÀ GÁI",
-    "address": "Tổ 7, thôn Hưng Mỹ, xã Thăng An, TP. Đà Nẵng",
-    "mapUrl": "https://maps.google.com/maps?q=15.732944,108.406222&t=&z=16&ie=UTF8&iwloc=&output=embed",
-    "mapLink": "https://www.google.com/maps/search/?api=1&query=15.732944,108.406222"
+    "name": "TƯ GIA NHÀ TRAI",
+    "address": "Đội 5, TDP Vĩnh An, phường Phong Dinh, TP. Huế",
+    "mapUrl": "https://maps.google.com/maps?q=16.679861,107.336278&t=&z=16&ie=UTF8&iwloc=&output=embed",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=16.679861,107.336278"
   },
   "images": {
     "cover": "/images/VUQ_8692.jpg",

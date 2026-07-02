@@ -26,9 +26,9 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
           className={`${styles.heroTitle} font-cursive`}
           initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.8, ease: "easeOut" }}
         >
-          {data.couple.bride} & {data.couple.groom}
+          {data.couple.groom} & {data.couple.bride}
         </motion.h1>
       </div>
 
