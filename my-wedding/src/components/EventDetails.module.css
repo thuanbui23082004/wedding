@@ -1,0 +1,211 @@
+.eventSection {
+  padding-top: 2.2rem !important;
+}
+
+.twoPhotos {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: #c5c2bd; /* Gray frame color */
+  margin-left: -1.5rem; /* Negative margins to cancel parent's padding */
+  margin-right: -1.5rem;
+  margin-bottom: 4.5rem; /* Increased spacing to 'Thư Mời' below */
+  border-radius: 0;
+}
+
+.photo {
+  flex: 1;
+  min-width: 0; /* Crucial to prevent flex item from expanding to intrinsic width */
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.invitationHeader {
+  margin-bottom: 2rem;
+}
+
+.headerDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  height: 1px;
+  background-color: #333;
+  width: 20%;
+}
+
+.cursiveTitle {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #333;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.subTitle {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: #555;
+}
+
+.threePhotos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin-left: -1.5rem; /* Full width */
+  margin-right: -1.5rem;
+  margin-bottom: 3rem;
+}
+
+.sidePhotoWrapper {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.centerPhotoWrapper {
+  flex: 1.25;
+  min-width: 0;
+}
+
+.sidePhoto {
+  width: 100%;
+  aspect-ratio: 2/3.2;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.centerPhoto {
+  width: 100%;
+  aspect-ratio: 2/3.2;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.ceremonyContainer {
+  margin-bottom: 3rem;
+}
+
+.eventTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+}
+
+.eventSubtitle {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.dateTimeLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.timeBlock {
+  flex: 1;
+  text-align: right;
+  padding-right: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.dateBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  padding: 0 1.5rem;
+  flex-shrink: 0;
+}
+
+.dayOfWeek, .month {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.largeDate {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.yearBlock {
+  flex: 1;
+  text-align: left;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lunarDate {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.location {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.partyContainer {
+  background-color: #faf8f5;
+  border: 1.5px solid #333;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  margin: 0 1.2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  animation: pulseBorder 4s infinite ease-in-out;
+  transition: border-color 0.5s ease;
+}
+
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border-color: #333;
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.08);
+    border-color: #8b0000; /* Soft shift to wedding dark red */
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border-color: #333;
+  }
+}
+
+.partyTime {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.partyDateFull {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  margin-bottom: 1rem;
+  color: #111;
+}

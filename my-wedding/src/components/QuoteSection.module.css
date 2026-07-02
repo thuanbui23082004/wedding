@@ -1,0 +1,13 @@
+.quoteSection {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  padding-bottom: 0px !important; /* Bring next section much closer */
+}
+
+.quoteText {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 1.25rem;
+  color: #111;
+  line-height: 1.5;
+  word-spacing: 2px;
+}

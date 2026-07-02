@@ -1,0 +1,90 @@
+.musicContainer {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999; /* Always on top */
+}
+
+.musicButton {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(131, 101, 83, 0.9); /* Soft brown wedding color */
+  color: white;
+  border: 1.5px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.musicButton:hover {
+  transform: scale(1.1);
+  background-color: rgba(131, 101, 83, 1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.musicButton:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.isPlaying .icon {
+  animation: pulseIcon 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseIcon {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.ripple {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(131, 101, 83, 0.6);
+  animation: rippleEffect 2.2s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ripple2 {
+  animation-delay: 1.1s;
+}
+
+@keyframes rippleEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+
+/* Adjust for small screens */
+@media (max-width: 480px) {
+  .musicContainer {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .musicButton {
+    width: 46px;
+    height: 46px;
+  }
+}

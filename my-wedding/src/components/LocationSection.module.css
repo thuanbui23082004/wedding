@@ -1,0 +1,90 @@
+.decorativeDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.decorativeImage {
+  width: 220px;
+  height: auto;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.locationCard {
+  background-color: #f5efe9; /* Very bright warm beige, near white */
+  border: none;
+  border-radius: 0;
+  padding: 2.2rem 1.5rem;
+  margin-left: -1.5rem; /* Negative margins to span 100% width */
+  margin-right: -1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  animation: pulseCard 5s infinite ease-in-out;
+}
+
+@keyframes pulseCard {
+  0% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  }
+  50% {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.placeName {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.placeAddress {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+.mapContainer {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.4s ease;
+}
+
+.mapContainer:hover {
+  transform: scale(1.01);
+}
+
+.mapButton {
+  display: inline-block;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.mapButton:hover {
+  background-color: #8b0000;
+  box-shadow: 0 4px 12px rgba(139, 0, 0, 0.25);
+  transform: translateY(-2px);
+}

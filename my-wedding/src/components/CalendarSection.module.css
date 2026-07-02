@@ -1,0 +1,132 @@
+.calendarHeader {
+  display: flex;
+  justify-content: space-between; /* Align to left and right edges */
+  align-items: flex-end; /* Align bottom baselines */
+  margin: 0 auto 0px auto; /* Sits right on top of the grid */
+  max-width: 400px;
+  width: 100%;
+  white-space: nowrap;
+  padding: 0 4px; /* Tiny padding to prevent clipping at border edges */
+}
+
+.monthText {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 2.5rem;
+  color: #826553;
+  line-height: 1.1;
+}
+
+.yearText {
+  font-family: 'Abril Fatface', serif;
+  font-size: 4.8rem;
+  font-weight: 400; /* Abril Fatface defaults to thick style at weight 400 */
+  color: #826553;
+  line-height: 0.8;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid #ebdcd5;
+  border-left: 1px solid #ebdcd5;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.dayHeader {
+  background-color: #826553;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  border-right: 1px solid #ebdcd5;
+  border-bottom: 1px solid #ebdcd5;
+}
+
+.dayCell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ebdcd5;
+  border-bottom: 1px solid #ebdcd5;
+  position: relative;
+  background-color: white;
+}
+
+.dateNumber {
+  font-size: 1rem;
+  color: #8c847e;
+  z-index: 2;
+  font-weight: 400;
+}
+
+.sundayText {
+  color: #524037;
+  font-weight: 700;
+}
+
+.highlightDate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heartIcon {
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-1px); /* Slight shift to align visually */
+  animation: calendarHeartbeat 2.2s infinite ease-in-out;
+}
+
+.heartIconPulse {
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-1px);
+  animation: heartRipple 2.2s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes calendarHeartbeat {
+  0% {
+    transform: translateY(-1px) scale(1);
+  }
+  14% {
+    transform: translateY(-1px) scale(1.12);
+  }
+  28% {
+    transform: translateY(-1px) scale(1);
+  }
+  42% {
+    transform: translateY(-1px) scale(1.12);
+  }
+  70% {
+    transform: translateY(-1px) scale(1);
+  }
+  100% {
+    transform: translateY(-1px) scale(1);
+  }
+}
+
+@keyframes heartRipple {
+  0% {
+    transform: translateY(-1px) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-1px) scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-1px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.highlightedText {
+  font-size: 1.05rem;
+  color: #333;
+}

@@ -1,0 +1,107 @@
+.rsvpSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.rsvpBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rsvpOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%);
+  z-index: 10;
+}
+
+.contentContainer {
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 0 1.5rem;
+  color: white;
+}
+
+.thankYouCursive {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3rem;
+  color: #ebdcd5; /* soft warm beige */
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  white-space: nowrap;
+}
+
+.thankYouSub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.signatureLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.beatingHeart {
+  width: 24px;
+  height: auto;
+  filter: brightness(0) invert(1); /* makes the red heart pure white */
+  animation: footerHeartbeat 1.8s infinite ease-in-out;
+}
+
+@keyframes footerHeartbeat {
+  0% { transform: scale(1); }
+  20% { transform: scale(1.15); }
+  40% { transform: scale(1); }
+  60% { transform: scale(1.15); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.coupleNames {
+  font-family: 'UTM Azkia', var(--font-cursive);
+  font-size: clamp(1.2rem, 5.5vw, 1.8rem);
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.weddingDate {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}

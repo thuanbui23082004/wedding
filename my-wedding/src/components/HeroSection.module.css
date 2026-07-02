@@ -1,0 +1,86 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0.8) 0%, transparent 40%);
+  z-index: 10;
+}
+
+.heroTop {
+  z-index: 20;
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.heroTitle {
+  font-family: 'UTM Azkia', var(--font-cursive);
+  font-size: clamp(1.2rem, 7vw, 2.5rem);
+  white-space: nowrap;
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.heroBottom {
+  z-index: 20;
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 85%;
+}
+
+.heroBox {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: 0.2em;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.heroTime {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.heroDate {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  color: #111;
+  margin-top: 0.5rem;
+}

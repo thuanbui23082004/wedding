@@ -1,0 +1,121 @@
+.familySection {
+  padding-bottom: 0px !important;
+}
+
+.familyContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+/* Top Parents Block */
+.parentsBlock {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  align-items: stretch;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.parentsColumn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0; /* Prevents long content from stretching the column */
+  padding: 0 4px;
+}
+
+.columnTitle {
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(0.7rem, 3vw, 0.85rem);
+  font-weight: 700;
+  color: #836553; /* Warm bronze */
+  letter-spacing: 1px;
+  margin: 0 0 0.6rem 0;
+  text-transform: uppercase;
+}
+
+.parentName {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.65rem, 3.1vw, 0.82rem);
+  color: #333;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+.parentAddress {
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(0.6rem, 2.6vw, 0.72rem);
+  color: #777;
+  margin: 0.4rem 0 0 0;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.verticalLine {
+  background-color: #d8cfc4;
+  width: 1px;
+}
+
+/* Bottom Couple Block */
+.coupleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.personContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cursiveName {
+  font-family: 'UTM Azkia', var(--font-cursive);
+  font-size: clamp(2.2rem, 9.5vw, 3.2rem);
+  font-weight: normal;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.relationText {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 2px;
+  margin: 0.35rem 0 0 0;
+  text-transform: uppercase;
+}
+
+.ampersand {
+  font-family: 'UTM Azkia', var(--font-cursive);
+  font-size: 2rem;
+  color: #836553;
+  line-height: 1;
+  margin: 0.1rem 0;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 480px) {
+  .parentsBlock {
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .relationText {
+    font-size: 0.68rem;
+  }
+
+  .ampersand {
+    font-size: 1.8rem;
+  }
+}
