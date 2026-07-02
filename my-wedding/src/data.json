@@ -48,18 +48,27 @@
   },
   "images": {
     "cover": "/images/VUQ_8692.jpg",
-    "gallery": [
-      "/images/gallery-1.jpg",
-      "/images/gallery-2.jpg",
-      "/images/gallery-3.jpg",
-      "/images/gallery-4.jpg",
-      "/images/gallery-5.jpg",
-      "/images/aVUQ_8724.jpg",
-      "/images/VUQ_8692.jpg",
-      "/images/gallery-1.jpg",
-      "/images/gallery-3.jpg",
-      "/images/gallery-2.jpg"
+    "cdcr": [
+      "/images/aVUQ_8937.jpg",
+      "/images/aVUQ_8153.jpg"
     ],
-    "footerBg": "/images/VUQ_8692.jpg"
+    "thumoi": [
+      "/images/gallery-3.jpg",
+      "/images/gallery-2.jpg",
+      "/images/gallery-4.jpg"
+    ],
+    "gallery": [
+      "/images/aVUQ_8703.jpg",
+      "/images/aVUQ_8539.jpg",
+      "/images/aVUQ_8320.jpg",
+      "/images/aVUQ_8570.jpg",
+      "/images/aVUQ_8341.jpg",
+      "/images/aVUQ_8724.jpg",
+      "/images/aVUQ_8220.jpg",
+      "/images/aVUQ_8792.jpg",
+      "/images/aVUQ_8738.jpg",
+      "/images/aVUQ_8773.jpg"
+    ],
+    "footerBg": "/images/gallery-1.jpg"
   }
 }
