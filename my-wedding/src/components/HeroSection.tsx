@@ -28,7 +28,7 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.8, ease: "easeOut" }}
         >
-          {data.couple.groom} & {data.couple.bride}
+          {data.couple.bride} & {data.couple.groom}
         </motion.h1>
       </div>
 

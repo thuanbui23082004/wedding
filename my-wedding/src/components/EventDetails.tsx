@@ -51,7 +51,7 @@ const EventDetails: React.FC<EventProps> = ({ data }) => {
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.15 }}
         >
-          THAM DỰ LỄ CƯỚI {data.couple.groom.toUpperCase()} & {data.couple.bride.toUpperCase()}
+          THAM DỰ LỄ CƯỚI {data.couple.bride.toUpperCase()} & {data.couple.groom.toUpperCase()}
         </motion.p>
       </div>
 

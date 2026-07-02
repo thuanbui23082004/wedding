@@ -24,17 +24,6 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
       >
         {/* Top Parents Block */}
         <div className={styles.parentsBlock}>
-          {/* Nhà Trai */}
-          <div className={styles.parentsColumn}>
-            <h3 className={styles.columnTitle}>NHÀ TRAI</h3>
-            <p className={styles.parentName}>Ông: {cleanName(data.family.bride.father, "ông")}</p>
-            <p className={styles.parentName}>Bà: {cleanName(data.family.bride.mother, "bà")}</p>
-            <p className={styles.parentAddress}>{data.family.bride.address}</p>
-          </div>
-
-          {/* Vertical Divider Line */}
-          <div className={styles.verticalLine}></div>
-
           {/* Nhà Gái */}
           <div className={styles.parentsColumn}>
             <h3 className={styles.columnTitle}>NHÀ GÁI</h3>
@@ -42,11 +31,22 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
             <p className={styles.parentName}>Bà: {cleanName(data.family.groom.mother, "bà")}</p>
             <p className={styles.parentAddress}>{data.family.groom.address}</p>
           </div>
+
+          {/* Vertical Divider Line */}
+          <div className={styles.verticalLine}></div>
+
+          {/* Nhà Trai */}
+          <div className={styles.parentsColumn}>
+            <h3 className={styles.columnTitle}>NHÀ TRAI</h3>
+            <p className={styles.parentName}>Ông: {cleanName(data.family.bride.father, "ông")}</p>
+            <p className={styles.parentName}>Bà: {cleanName(data.family.bride.mother, "bà")}</p>
+            <p className={styles.parentAddress}>{data.family.bride.address}</p>
+          </div>
         </div>
 
         {/* Bottom Couple Block */}
         <div className={styles.coupleBlock}>
-          {/* Groom */}
+          {/* Bride */}
           <div className={styles.personContainer}>
             <motion.h2
               className={`${styles.cursiveName} font-cursive`}
@@ -55,9 +55,9 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
             >
-              {data.couple.groomFull}
+              {data.couple.brideFull}
             </motion.h2>
-            {data.couple.groomRelation && (
+            {data.couple.brideRelation && (
               <motion.p
                 className={styles.relationText}
                 initial={{ opacity: 0 }}
@@ -65,7 +65,7 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1.2, delay: 0.5 }}
               >
-                {data.couple.groomRelation}
+                {data.couple.brideRelation}
               </motion.p>
             )}
           </div>
@@ -81,7 +81,7 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
             &
           </motion.div>
 
-          {/* Bride */}
+          {/* Groom */}
           <div className={styles.personContainer}>
             <motion.h2
               className={`${styles.cursiveName} font-cursive`}
@@ -90,9 +90,9 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1.2, ease: "easeOut", delay: 0.7 }}
             >
-              {data.couple.brideFull}
+              {data.couple.groomFull}
             </motion.h2>
-            {data.couple.brideRelation && (
+            {data.couple.groomRelation && (
               <motion.p
                 className={styles.relationText}
                 initial={{ opacity: 0 }}
@@ -100,7 +100,7 @@ const FamilySection: React.FC<FamilyProps> = ({ data }) => {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1.2, delay: 0.9 }}
               >
-                {data.couple.brideRelation}
+                {data.couple.groomRelation}
               </motion.p>
             )}
           </div>
